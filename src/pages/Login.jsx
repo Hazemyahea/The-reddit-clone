@@ -21,7 +21,7 @@ export const Login = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col p-3 gap-5 mx-auto w-2/4 my-20 border-slate-100"
+      className="flex flex-col p-3 gap-5  md:mx-auto w-full md:w-2/4 my-20 border-slate-100"
     >
       {error && (
         <div className=" bg-red-700 p-2 rounded-md text-white">
