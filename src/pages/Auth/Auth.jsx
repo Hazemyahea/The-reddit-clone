@@ -19,7 +19,6 @@ const Auth = () => {
       navigate("/login");
     }
     setUser(user);
-    console.log("from Au");
   }, [isAuth, isLoading, user]);
 
   if (isLoading) {

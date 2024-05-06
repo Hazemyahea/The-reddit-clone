@@ -45,12 +45,10 @@ const ProfileUpdate = () => {
   }
 
   const onSubmit = (data) => {
-    console.log();
     let thedata = {
       ...data,
       avatar: avatar,
     };
-    console.log(thedata);
     updateProfile({ user_id: user.user.id, thedata });
     notify();
   };
