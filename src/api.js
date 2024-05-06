@@ -50,7 +50,6 @@ export async function InserPosts({ title, content, image, user_id }) {
   if (storageError) {
     await supabase.from("posts").delete().eq("id", data.id);
     throw new Error("post can not be created");
-    console.log(storageError);
   }
   return data;
 }
@@ -174,8 +173,6 @@ export async function GetSinglePost(id) {
       )
       .eq("id", id);
 
-    console.log(post);
-
     if (post) {
       let { data: profiles, error: usererr } = await supabase
         .from("profiles")
@@ -200,7 +197,6 @@ export async function getUserProfile(id) {
       .from("profiles")
       .select(`*, posts (id,title,content)`)
       .eq("id", id);
-    console.log(profiles);
     if (error) {
       console.log(error);
     }
