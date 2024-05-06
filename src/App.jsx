@@ -13,10 +13,12 @@ import ProfileUpdate from "./pages/Auth/ProfileUpdate";
 import PostDetails from "./pages/Auth/PostDetails";
 import MyProfile from "./pages/Auth/MyProfile";
 import AllUsers from "./pages/Auth/AllUsers";
+import ErrorPage from "./pages/ErrorPage";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Auth />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
