@@ -266,7 +266,6 @@ export async function updateOnlineStatus({ user_id, status }) {
 }
 
 export async function updateProfile({ user_id, thedata }) {
-  console.log(thedata.fullname);
   try {
     const { data, error } = await supabase
       .from("profiles")
@@ -332,7 +331,6 @@ export async function GetComments(id) {
       .eq("post_id", id)
       .order("created_at", { ascending: false });
 
-    console.log(comments);
     return comments;
   } catch (error) {
     console.log(error);

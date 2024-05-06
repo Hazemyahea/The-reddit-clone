@@ -5,7 +5,6 @@ import { AuthContext } from "../Context/AuthContext";
 
 export const Sidebar = () => {
   const { user } = useContext(AuthContext);
-  console.log(user?.user.id);
   const { mutate: logout, isPending } = useLogOut();
   return (
     <div className="hidden md:block p-5 border-r border-[#3C4345] flex flex-col gap-5 w-1/4 h-screen sticky top-10 overflow-y-auto">
