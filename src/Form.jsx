@@ -49,7 +49,10 @@ const Form = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col gap-2 w-full"
+      >
         <input
           defaultValue=""
           {...register("title", { required: true })}

@@ -61,7 +61,7 @@ const ProfileUpdate = () => {
       <div className="flex flex-col w-full ">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col p-3 gap-5 mx-auto w-2/4 my-20 border-slate-100"
+          className="flex flex-col px-4 md:p-3 gap-5  md:mx-auto md:w-2/4 my-10 md:my-20 border-slate-100"
         >
           <div>
             <h2 className=" text-3xl font-bold">edite profile</h2>

@@ -52,6 +52,9 @@ const Profile = () => {
               </p>
             </div>
             <p className="font-semibold text-slate-400">{`u/${userProfile[0]?.fullname}123`}</p>
+            <p className=" font-mono mt-2">
+              {userProfile && userProfile[0]?.About}
+            </p>
           </div>
         </div>
         {user.user.id === userProfile[0]?.id && (
